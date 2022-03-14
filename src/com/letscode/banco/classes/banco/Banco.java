@@ -23,7 +23,6 @@ public class Banco {
 
     public Banco() {
         System.out.println("Bem-vindo ao banco!");
-        contadorContas++;
     }
 
 
@@ -34,11 +33,6 @@ public class Banco {
     public int getContadorContas() {
         return contadorContas;
     }
-
-    public void setContadorContas(int contadorContas) {
-        this.contadorContas = contadorContas;
-    }
-
 
     public Cliente getClienteById(String idCliente) {
         for (Cliente cliente: clientesCadastrados) {
